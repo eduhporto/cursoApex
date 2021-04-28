@@ -94,4 +94,3 @@ document.getElementById("paragrafo12.3").innerText = "Hora atual na México: " +
 
 
 */
-
