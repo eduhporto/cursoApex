@@ -11,7 +11,7 @@ function atividade05() {
 
     var media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3
 
-    //No caso de a média ficar com vírgula, temo como arredondar? E mostrar apenas dois números após a vírgula?
+    //No caso de a média ficar com vírgula, temo como arredondar? E mostrar apenas dois números após a vírgula? .toFixed(numCasas)
     if(media >= 7){
         document.getElementById("paragrafo05").innerText = "A nota final deste aluno foi " + media + ". Este aluno foi aprovado, dê os parabéns para ele."
     //Teria como utilizar apenas o "else" neste caso? Ex.: else "aluno foi reprovado."
