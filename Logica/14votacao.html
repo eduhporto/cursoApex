@@ -7,14 +7,42 @@
     <title>Document</title>
 
     <script>
-        var blumenau =0, indaial = 0, pomerode = 0
+        var blumenau = 0, indaial = 0, pomerode = 0
         var voto
         var continuar
 
         do {
-            continuar = confirm("Continuar a votação?")
-        } while (continuar == true);
+            voto = parseInt(prompt("1)Blumenau \n 2)Indaial \n 3)Pomerode"))
 
+            switch (voto) {
+                case 1:
+                blumenau++
+                break;
+
+                case 2:
+                indaial++
+                break;
+            
+                case 3:
+                pomerode++
+                
+            }
+
+            continuar = confirm("Continuar a votação?")
+        }while (continuar == true);
+
+        document.write("Blumenau obteve " + blumenau + " votos<br>")
+        document.write("Indaial obteve " + indaial + " votos<br>")
+        document.write("Pomerode obteve " + pomerode + " votos<br>")
+
+        //somar votos para percentual
+        var somarVotos = blumenau + indaial + pomerode
+
+        document.write(((100/somarVotos) * blumenau) + blumenau + " votos<br>")
+        document.write(((100/somarVotos) * indaial) + indaial + " votos<br>")
+        document.write(((100/somarVotos) * pomerode) + pomerode + " votos<br>")
+        
+        
 
     </script>
 </head>
