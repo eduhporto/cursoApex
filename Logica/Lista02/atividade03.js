@@ -28,12 +28,6 @@ function atividade03() {
 
      
 }
-        
-    // }else num2++
-    // do {
-    //     texto.innerHTML += ("<p>Números entre " + num2 + " e " + num1 + ":" + num2++ + "</p>")
-        
-    // } while (num2 < num1);
 
        
 
