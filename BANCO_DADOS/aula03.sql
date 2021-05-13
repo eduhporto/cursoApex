@@ -45,3 +45,4 @@ INSERT INTO produtos VALUES (null, "Teclado", null, "Microsoft");
 SELECT * FROM produtos WHERE valor IS NULL;
 -- No caso de não serem nulos
 SELECT * FROM produtos WHERE valor IS NOT NULL;
+

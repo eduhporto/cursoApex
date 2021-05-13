@@ -56,7 +56,7 @@ SELECT AVG(nota1) FROM alunos;
 SELECT nome, nota1 FROM alunos WHERE nota1 >= 7;
 
 
-PESQUISA
+-- PESQUISA
 -- E% -> Inicia com o texto
 -- %A -> Finaliza com o texto
 -- %u% -> Contêm o texto
