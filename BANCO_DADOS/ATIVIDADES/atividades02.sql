@@ -47,5 +47,30 @@ SELECT * FROM produtos
 WHERE marca IN ("Apple", "Samsung") AND valor <= 6000.00;
 
 -- 8) Insira o produto: iPhone 11 Max, da marca Apple no valor de R$6.500,00
+INSERT INTO produtos VALUES (null, "Iphone 11 Max", "Apple", 6500);
 
+-- 9) Exiba o nome e valor do produto mais caro. (Para essa questão haverá um duplo SELECT, chame o instrutor para explicar)
+SELECT nome, valor FROM produtos
+WHERE valor = (SELECT MAX(valor) FROM produtos);
 
+-- 10) Remover todos os produtos da marca Samsung
+DELETE FROM produtos
+WHERE marca = "Samsung";
+
+-- 11) Adicionar novos produtos:
+-- "Galaxy A7", "Samsung", 2000;
+-- "Galaxy A8", "Samsung", 2350;
+
+INSERT INTO produtos VALUES
+    (null, "Galaxy A7", "Samsung", 2000),
+    (null, "Galaxy A8", "Samgung", 2300);
+
+-- 12) Limpar dados e reiniciar numeração
+TRUNCATE produtos;    
+
+-- Teste de criação para ver se os códigos começariam a partir do zero mesmo.
+INSERT INTO produtos VALUES
+    (null, "Galaxy A7", "Samsung", 2000),
+    (null, "Galaxy A8", "Samgung", 2300);
+
+DROP TABLE produtos;
