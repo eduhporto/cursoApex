@@ -17,53 +17,69 @@ public class Principal {
 		double conversion = 0; 
 		DecimalFormat doisDigitos = new DecimalFormat("0.00");
 		
+		//1 Real
+		//2 Dólar
+		//3 Libra
+		//4 Euro
+		
 		if (moeda1 == 1 && moeda2 == 2) {
-			JOptionPane.showMessageDialog(null, "Conversão de moedas");
-			conversion = valToConvert/5.28;
+			//real para dolar
+			conversion = valToConvert*0.1867;
 			JOptionPane.showMessageDialog(null, valToConvert + " Reais, vale " + doisDigitos.format(conversion) + " Dólares");
 			
 		}else if (moeda1 == 1 && moeda2 == 3) {
-			conversion = valToConvert/7.49;
+			//real para libra
+			conversion = valToConvert*0.132;
 			JOptionPane.showMessageDialog(null, valToConvert + " Reais, vale " + doisDigitos.format(conversion) + " Libras");
 			
 		}else if (moeda1 == 1 && moeda2 == 4) {
-			conversion = valToConvert/6.46;
+			//real para euro
+			conversion = valToConvert*0.1533;
 			JOptionPane.showMessageDialog(null, valToConvert + " Reais, vale " + doisDigitos.format(conversion) + " Euros");
 			
 		}else if (moeda1 == 2 && moeda2 == 1) {
-			//conversion = valToConvert/6.46;
+			//dolar para real
+			conversion = valToConvert*5.3562;
 			JOptionPane.showMessageDialog(null, valToConvert + " Dólares, vale " + doisDigitos.format(conversion) + " Reais");
 			
 		}else if (moeda1 == 2 && moeda2 == 3) {
-			//conversion = valToConvert/6.46;
+			//dolar para libra
+			conversion = valToConvert*0.7068;
 			JOptionPane.showMessageDialog(null, valToConvert + " Dólares, vale " + doisDigitos.format(conversion) + " Libras");
 			
 		}else if (moeda1 == 2 && moeda2 == 4) {
-			//conversion = valToConvert/6.46;
+			//dolar para euro
+			conversion = valToConvert*0.8211;
 			JOptionPane.showMessageDialog(null, valToConvert + " Dólares, vale " + doisDigitos.format(conversion) + " Euros");
 			
 		}else if (moeda1 == 3 && moeda2 == 1) {
-			//conversion = valToConvert/6.46;
+			//libra para real
+			conversion = valToConvert*7.5781;
 			JOptionPane.showMessageDialog(null, valToConvert + " Libras, vale " + doisDigitos.format(conversion) + " Reais");
 			
 		}else if (moeda1 == 3 && moeda2 == 2) {
-			//conversion = valToConvert/6.46;
+			//libra para dolar
+			conversion = valToConvert*1.4148;
 			JOptionPane.showMessageDialog(null, valToConvert + " Libras, vale " + doisDigitos.format(conversion) + " Dolares");
 			
 		}else if (moeda1 == 3 && moeda2 == 4) {
-			//conversion = valToConvert/6.46;
+			//libra para euro
+			conversion = valToConvert*1.1617;
 			JOptionPane.showMessageDialog(null, valToConvert + " Libras, vale " + doisDigitos.format(conversion) + " Euros");
 			
 		}else if (moeda1 == 4 && moeda2 == 1) {
-			//conversion = valToConvert/6.46;
+			//euro para real
+			conversion = valToConvert*6.5232;
 			JOptionPane.showMessageDialog(null, valToConvert + " Euros, vale " + doisDigitos.format(conversion) + " Reais");
 			
 		}else if (moeda1 == 4 && moeda2 == 2) {
-			//conversion = valToConvert/6.46;
+			//euro para dolar
+			conversion = valToConvert*1.2179;
 			JOptionPane.showMessageDialog(null, valToConvert + " Euros, vale " + doisDigitos.format(conversion) + " Dolares");
 			
 		}else if (moeda1 == 4 && moeda2 == 3) {
-			//conversion = valToConvert/6.46;
+			//euro para libra
+			conversion = valToConvert*0.8608;
 			JOptionPane.showMessageDialog(null, valToConvert + " Euros, vale " + doisDigitos.format(conversion) + " Libras");
 			
 		}else {
